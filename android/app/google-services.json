@@ -1,0 +1,30 @@
+
+{
+  "project_info": {
+    "project_number": "551367168294",
+    "project_id": "crypto-list-app228",
+    "storage_bucket": "crypto-list-app228.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551367168294:android:a65a73bcf02c20566cb1e7",
+        "android_client_info": {
+          "package_name": "com.mypetproject.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHxpM2TMriJghpp45mYi4sYKjo_597xJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

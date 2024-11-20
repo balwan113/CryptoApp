@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        google()      // Репозиторий для Google
+        mavenCentral() // Репозиторий Maven Central
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'  // Плагин для Android
+        classpath 'com.google.gms:google-services:4.3.15'  // Плагин для Google services
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.10.1' // Пример для Crashlytics
+    }
+}
+
+allprojects {
+    repositories {
+        google()      // Репозиторий для Google
+        mavenCentral() // Репозиторий Maven Central
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"  // Директория сборки для под-проектов
+    project.evaluationDependsOn(":app") // Зависимость от основного проекта
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir  // Задача для очистки
+}
